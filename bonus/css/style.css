@@ -36,7 +36,6 @@ header{
 
 .header-top{
   height: 80px;
-
 }
 .header-top:after{
   content: "";
@@ -53,18 +52,15 @@ header{
 .menuleft ul{
   list-style: none;
 }
-
 .menuleft li{
   display: inline;
   margin-left: 10px;
 }
-
 .menuleft li img{
   vertical-align: middle;
   padding-right: 30px;
   margin-bottom: 7px;
 }
-
 .menuleft a{
   line-height: 80px;
   font-size: 12px;
@@ -82,12 +78,10 @@ header{
 .menu-right ul{
   list-style: none;
 }
-
 .menu-right li{
   display: inline;
   margin-left: 10px;
 }
-
 .menu-right a{
   line-height: 80px;
   font-size: 12px;
@@ -102,6 +96,7 @@ header{
   padding: 15px 20px;
   background-color: #7CBB02;
   border-radius: 5px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -115,12 +110,10 @@ header{
   height: 370px;
   width: 50%;
 }
-
 .header-main h1{
   font-size: 45px;
   padding-bottom: 20px;
 }
-
 .header-main a{
   display: inline-block;
   text-decoration: none;
@@ -130,8 +123,6 @@ header{
   border-radius: 5px;
   cursor: pointer;
 }
-
-
 .header-main .banner{
   position: absolute;
   left: 0;
@@ -204,6 +195,7 @@ hr.divider{
 }
 
 /* call to action */
+
 .call-to-action{
   margin-top: 30px;
 }
@@ -242,7 +234,6 @@ hr.divider{
 
 footer{
   background-color: #D3D3D3;
-
 }
 
 .footer-container:after{
@@ -250,21 +241,18 @@ footer{
   display: table;
   clear: both;
 }
-
-.footer-container{
-}
-
 .footer-container .widget{
-  height: 100px;
-  width: 50%;
+  position: relative;
   float: left;
+  height: 150px;
+  width: 40%;
 }
+
+/* sezione sinistra */
 
 .widget-left{
-  position: relative;
-
+  margin-right: 20%;
 }
-
 .widget-left a{
   position: absolute;
   left: 0;
@@ -273,4 +261,35 @@ footer{
   text-decoration: none;
   font-size: 20px;
   color: black;
+}
+
+/* seziobe destra */
+
+.widget-right-content{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.widget-right-content p{
+  display: inline-block;
+}
+.widget-right-content p:nth-child(2){
+  border-bottom: 1px solid grey;
+  width: 120px;
+  margin-left: 30px;
+}
+.widget-right-content i{
+  position: absolute;
+  margin-left: -17px;
+  color: grey;
+}
+.widget-right-content .button-footer{
+  margin-left: 30px;
+}
+
+.button-at-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 82%;
 }
