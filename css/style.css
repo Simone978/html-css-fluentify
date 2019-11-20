@@ -39,6 +39,9 @@ header{
   display: table;
   clear: both;
 }
+
+/* menu sinistra */
+
 .header-top-left{
   float:left;
 }
@@ -65,8 +68,41 @@ header{
   text-transform: uppercase;
 }
 
+/* menu destra */
+
 .header-top-right{
   float:right;
+}
+
+.menu-right ul{
+  list-style: none;
+}
+
+.menu-right li{
+  display: inline;
+  margin-left: 10px;
+}
+
+.menu-right a{
+  line-height: 80px;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-button{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  background-color: #7CBB02;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-background{
+  background-color: initial;
+  border: 1px solid #ffffff;
 }
 
 .header-main{
