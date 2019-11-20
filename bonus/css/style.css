@@ -242,7 +242,7 @@ hr.divider{
 
 footer{
   background-color: #D3D3D3;
-  height: 100px;
+
 }
 
 .footer-container:after{
@@ -250,7 +250,27 @@ footer{
   display: table;
   clear: both;
 }
+
+.footer-container{
+}
+
 .footer-container .widget{
+  height: 100px;
   width: 50%;
   float: left;
+}
+
+.widget-left{
+  position: relative;
+
+}
+
+.widget-left a{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
