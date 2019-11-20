@@ -1,0 +1,256 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  color: grey;
+}
+
+/* testata */
+
+header{
+  width: 100%;
+  background-color: #0C325A;
+  background-image: url("../img/oldman.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 110% 110%;
+}
+
+.general-width{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-body{
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.header-top{
+  height: 80px;
+
+}
+.header-top:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* menu sinistra */
+
+.header-top-left{
+  float:left;
+}
+
+.menuleft ul{
+  list-style: none;
+}
+
+.menuleft li{
+  display: inline;
+  margin-left: 10px;
+}
+
+.menuleft li img{
+  vertical-align: middle;
+  padding-right: 30px;
+  margin-bottom: 7px;
+}
+
+.menuleft a{
+  line-height: 80px;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* menu destra */
+
+.header-top-right{
+  float:right;
+}
+
+.menu-right ul{
+  list-style: none;
+}
+
+.menu-right li{
+  display: inline;
+  margin-left: 10px;
+}
+
+.menu-right a{
+  line-height: 80px;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-button{
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  background-color: #7CBB02;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-background{
+  background-color: initial;
+  border: 1px solid #ffffff;
+}
+
+.header-main{
+  position: relative;
+  height: 370px;
+  width: 50%;
+}
+
+.header-main h1{
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.header-main a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  background-color: #7CBB02;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.header-main .banner{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: white;
+}
+
+/* sottotestata */
+
+.subheader{
+  position: relative;
+  height: 100px;
+  background-color: #D3D3D3;
+}
+.subheader .collar{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.collar h2{
+  padding-bottom: 10px;
+}
+
+/* servizi */
+
+.main-servizi{
+  margin: 40px auto;
+}
+.main-servizi:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.servizi{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.servizi:first-child{
+  margin-right: calc(25% / 2);
+}
+.servizi:last-child{
+  margin-left: calc(25% / 2);
+}
+.servizi h2{
+  color: #7CBB02;
+  padding-bottom: 25px;
+}
+.servizi hr{
+  width: 60px;
+  margin: 0 auto;
+}
+.servizi img{
+  height: 188px;
+}
+.servizi p{
+  text-align: center;
+  padding-top: 25px;
+}
+
+hr.divider{
+  width: 98%;
+  margin: 0 auto;
+}
+
+/* call to action */
+.call-to-action{
+  margin-top: 30px;
+}
+
+.call-to-action::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.call-to-action .picture{
+  float: left;
+  width: 45%;
+  text-align: center;
+  margin-right: 10%;
+}
+.call-to-action .picture img{
+  width: 100%;
+}
+
+.call-to-action .info{
+  float: left;
+  width: 45%;
+}
+.call-to-action .info h2{
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.call-to-action .info a{
+  display: inline-block;
+  padding-top: 20px;
+  color: #7BA1CB;
+}
+
+/* footer */
+
+footer{
+  background-color: #D3D3D3;
+  height: 100px;
+}
+
+.footer-container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-container .widget{
+  width: 50%;
+  float: left;
+}
